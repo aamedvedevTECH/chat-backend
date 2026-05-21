@@ -3,6 +3,7 @@ module github.com/aamedvedevTECH/chat-backend
 go 1.26.2
 
 require (
+	github.com/go-chi/chi/v5 v5.2.5
 	github.com/spf13/viper v1.21.0
 	go.uber.org/zap v1.28.0
 )
