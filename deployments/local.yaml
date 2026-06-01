@@ -3,3 +3,15 @@ listen:
   http:
     port: 8080
     maxRequestProcessingTime: 5s
+db:
+  host: postgres
+  port: 5432
+  user: chat_user
+  password: chat_password
+  name: chat_backend
+  sslMode: disable
+  schema: public
+  applicationName: chat-backend
+  migrationsDirPath: /migrations
+application:
+  passwordHash: 123456789
