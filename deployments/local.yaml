@@ -1,0 +1,5 @@
+logging:
+listen:
+  http:
+    port: 8080
+    maxRequestProcessingTime: 5s

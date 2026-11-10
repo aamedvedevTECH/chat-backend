@@ -20,3 +20,7 @@ type (
 		MaxRequestProcessingTime time.Duration `mapstructure:"maxRequestProcessingTime"`
 	}
 )
+
+func NewConfig() *Global {
+	return &Global{}
+}
