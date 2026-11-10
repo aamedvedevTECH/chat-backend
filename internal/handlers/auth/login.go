@@ -24,4 +24,10 @@ func (l *LoginByPassword) Call(w http.ResponseWriter, r *http.Request) {
 	}
 
 	fmt.Println(form.Username, form.Password)
+
+	// TODO: проверка пароля на валдиность в базе
+
+	// TODO: проверка существования юзера
+
+	// TODO: создание сессии и выписываем токены - отдаем клиенту
 }

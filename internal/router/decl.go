@@ -19,6 +19,7 @@ func Router(
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
 
+	r.Post("/v1/auth/register", loginByPassword.Call)
 	r.Get("/v1/auth/login", loginByPassword.Call)
 
 	server := &http.Server{Addr: fmt.Sprint(":", cfg.Listen.HTTPServer.Port), Handler: r}
